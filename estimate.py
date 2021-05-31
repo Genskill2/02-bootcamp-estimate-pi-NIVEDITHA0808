@@ -11,7 +11,7 @@ def wallis(i):
         
         product = product*(((2*n)/((2*n)+1)) * ((2*n)/((2*n)-1)))
     return(2*product)
-        
+# Unit Testing of wallis function      
 class Test_Wallis(unittest.TestCase):
     
     def test_low_iters(self):
@@ -41,7 +41,7 @@ def monte_carlo(i):
     pi = (4*(inside_the_circle/i))
     
     return(pi)
- 
+# Unit Testing of monte_carlo function 
 class TestMC(unittest.TestCase):
     def test_randomness(self):
         pi0 = monte_carlo(15000)
